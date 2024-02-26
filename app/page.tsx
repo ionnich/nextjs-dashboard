@@ -6,14 +6,14 @@ import clsx from 'clsx';
 
 export default function Page() {
   // limit to dark and light
-  const mode = 'dark';
+  let mode = 'dark';
   return (
     <main
       className={clsx(
         'inline-flex items-center rounded-full px-2 py-1 text-sm',
         {
           'bg-gray-100': mode == 'light',
-          'bg-red-100': mode == 'dark',
+          'bg-gray-800': mode == 'dark',
         },
       )}
     >
